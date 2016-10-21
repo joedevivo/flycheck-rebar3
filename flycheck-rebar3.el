@@ -4,7 +4,7 @@
 
 ;; Author: Joe DeVivo
 ;; Version: 1.0.0
-;; Package-Requires: ((flycheck "27") (erlang "2"))
+;; Package-Requires: ((flycheck "27"))
 ;; Keywords: erlang flycheck rebar3
 ;; URL: https://github/joedevivo/flymake-rebar3
 
