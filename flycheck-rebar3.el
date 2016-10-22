@@ -3,7 +3,7 @@
 ;; Copyright (C) 2016 Joe DeVivo
 
 ;; Author: Joe DeVivo
-;; Version: 1.0.0
+;; Version: 1.0.1
 ;; Package-Requires: ((flycheck "27"))
 ;; Keywords: erlang flycheck rebar3
 ;; URL: https://github/joedevivo/flymake-rebar3
@@ -38,11 +38,7 @@
 
 (defun flycheck-rebar3-project-root (_checker)
   "Return directory where =rebar.config= is located."
-  (or
-   (and
-    buffer-file-name
-    (locate-dominating-file buffer-file-name "rebar.config"))
-   default-directory))
+  (locate-dominating-file buffer-file-name "rebar.config"))
 
 
 ;;;###autoload
