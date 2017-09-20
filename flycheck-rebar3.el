@@ -57,7 +57,7 @@
                            (substring rebarconfig
                                       0
                                       (string-match
-                                       "\\(/_build/[^/]+/lib\\|/_checkouts\\)"
+                                       "\\(/_build/[^/]+/lib\\|/_checkouts\\|/apps\\)"
                                        rebarconfig)))
                         rebarconfig)))
     project-dir))
